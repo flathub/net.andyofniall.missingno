@@ -18,6 +18,13 @@
     "env": {
       "CARGO_HOME": "/run/build/missingno/cargo",
       "CARGO_NET_OFFLINE": "true"
+    },
+    "arch": {
+      "aarch64": {
+        "env": {
+          "PGO": "0"
+        }
+      }
     }
   },
   "modules": [
@@ -26,7 +33,7 @@
       "buildsystem": "simple",
       "build-commands": [
         "cargo --offline fetch --manifest-path Cargo.toml --verbose",
-        "cargo --offline build --release --verbose",
+        "./scripts/pgo-build.sh",
         "install -Dm755 target/release/missingno /app/bin/missingno",
         "install -Dm644 net.andyofniall.missingno.desktop /app/share/applications/net.andyofniall.missingno.desktop",
         "install -Dm644 net.andyofniall.missingno.metainfo.xml /app/share/metainfo/net.andyofniall.missingno.metainfo.xml",
