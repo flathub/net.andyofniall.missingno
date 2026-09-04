@@ -1,15 +1,9 @@
 [
     {
         "type": "git",
-        "url": "https://github.com/ajoneil/missingno",
-        "commit": "d09139bc48173d4d968ae940b7717cf8615ed284",
-        "dest": "flatpak-cargo/git/missingno-d09139b"
-    },
-    {
-        "type": "git",
         "url": "https://github.com/ajoneil/morepork",
-        "commit": "96bf93d266730cb68f4f0de1360c25618f9afdce",
-        "dest": "flatpak-cargo/git/morepork-96bf93d"
+        "commit": "67cfdc8d3146a21823eec11efc5b0e294d7a6ceb",
+        "dest": "flatpak-cargo/git/morepork-67cfdc8"
     },
     {
         "type": "archive",
@@ -3862,25 +3856,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/missingno-d09139b/crates/missingno-core\" \"cargo/vendor/missingno-core\""
-        ]
-    },
-    {
-        "type": "inline",
-        "contents": "[package]\nname = \"missingno-core\"\nversion = \"0.1.0\"\nedition = \"2024\"\n\n[dependencies]\nrgb = \"0.8.53\"\n\n[dependencies.serde]\nversion = \"1\"\nfeatures = [\"derive\"]\n",
-        "dest": "cargo/vendor/missingno-core",
-        "dest-filename": "Cargo.toml"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": null, \"files\": {}}",
-        "dest": "cargo/vendor/missingno-core",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "shell",
-        "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/morepork-96bf93d/crates/morepork\" \"cargo/vendor/morepork\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/morepork-67cfdc8/crates/morepork\" \"cargo/vendor/morepork\""
         ]
     },
     {
@@ -8226,7 +8202,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/ajoneil/missingno\"]\ngit = \"https://github.com/ajoneil/missingno\"\nreplace-with = \"vendored-sources\"\nbranch = \"main\"\n\n[source.\"https://github.com/ajoneil/morepork\"]\ngit = \"https://github.com/ajoneil/morepork\"\nreplace-with = \"vendored-sources\"\nbranch = \"main\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/ajoneil/morepork\"]\ngit = \"https://github.com/ajoneil/morepork\"\nreplace-with = \"vendored-sources\"\nbranch = \"main\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
