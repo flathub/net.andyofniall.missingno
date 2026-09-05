@@ -43,8 +43,8 @@
         {
           "type": "git",
           "url": "https://github.com/ajoneil/missingno.git",
-          "tag": "v26.8",
-          "commit": "8e35dbd49dac96a2fda4058607ef1ea96b87dc7b"
+          "tag": "v26.9",
+          "commit": "f5c5458d67b0867a9372dc0d753fca764b3ed740"
         },
         "cargo-sources.json"
       ]
