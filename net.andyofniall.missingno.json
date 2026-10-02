@@ -1,7 +1,7 @@
 {
   "app-id": "net.andyofniall.missingno",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "25.08",
+  "runtime-version": "26.08",
   "sdk": "org.freedesktop.Sdk",
   "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
   "command": "missingno",
@@ -43,8 +43,8 @@
         {
           "type": "git",
           "url": "https://github.com/ajoneil/missingno.git",
-          "tag": "v26.9",
-          "commit": "f5c5458d67b0867a9372dc0d753fca764b3ed740"
+          "tag": "v26.10",
+          "commit": "6bb612f0447217bbfbcf059694f43d702c533273"
         },
         "cargo-sources.json"
       ]
